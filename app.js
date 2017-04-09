@@ -7,7 +7,9 @@ app.set('view engine', 'hbs');
 
 //static files
 app.use(express.static('./public'));
-app.listen(3000);
+var port = process.env.PORT || 3000;
+
+app.listen(port);
 
 //fire controllers
 todoController(app);
