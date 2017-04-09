@@ -7,8 +7,8 @@ app.set('view engine', 'hbs');
 
 //static files
 app.use(express.static('./public'));
+app.listen(3000);
 
 //fire controllers
 todoController(app);
-app.listen(3000);
 console.log("You are listening to port: 3000");
