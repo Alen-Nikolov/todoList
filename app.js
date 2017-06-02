@@ -10,7 +10,7 @@ app.use(express.static('./public'));
 var port = process.env.PORT || 3000;
 
 app.listen(port);
-
+console.log("second git flow");
 //fire controllers
 todoController(app);
 console.log("You are listening to port: 3000");
